@@ -1,0 +1,37 @@
+{
+	"device_fingerprint_id": "381261982768507222",
+	"identity_id": "414071333547288643",
+	"is_referrable": 1,
+	"app_version": "4.0.0",
+	"facebook_app_link_checked": false,
+	"update": 1,
+	"debug": false,
+	"metadata": {},
+	"hardware_id": "ec4ce8546dbe79e7",
+	"is_hardware_id_real": true,
+	"brand": "samsung",
+	"model": "SM-G920I",
+	"screen_dpi": 640,
+	"screen_height": 2560,
+	"screen_width": 1440,
+	"wifi": true,
+	"os": "Android",
+	"os_version": 23,
+	"country": "CN",
+	"language": "zh",
+	"local_ip": "10.0.0.1",
+	"cd": {
+		"mv": "-1",
+		"pn": "com.nestia.living"
+	},
+	"google_advertising_id": "f6a34eaf-f8d8-4994-adc3-f70508de1788",
+	"lat_val": 0,
+	"instrumentation": {
+		"v1\/close-brtt": "301",
+		"v1\/close-lrtt": "35",
+		"v1\/open-qwt": "0"
+	},
+	"sdk": "android2.6.0",
+	"retryNumber": 0,
+	"branch_key": "key_live_edun66DrRzWi7Urc6WM70empCDdGIxFs"
+}
