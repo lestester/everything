@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JumeToScheme</title>
+    <style type="text/css">
+        .s_btn_wr{width:auto;height:auto;border-bottom:1px solid transparent;*border-bottom:0}
+        .s_ipt_wr.bg,.s_btn_wr.bg,#su.bg{background-image:none}
+        .s_form{position:relative;top:38.2%}
+        #parent {
+            display: flex;
+            width: 600px; /* 宽度值，随便啦 */
+            height: 200px;  /* 高度值，随便啦 */
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        #item {
+            width: 503px;/* 宽度值，随便啦 */
+            height: 200px;/* 高度值，随便啦 */
+        }
+
+    </style>
+</head>
+<script type="text/javascript">
+    function open_win()
+    {
+        window.open(document.getElementById("input").value)
+    }
+</script>
+<body  style="background-color :#286090;">
+<div>
+    <br>
+    <br>
+</div>
+<div class="row s_form" >
+    <div style="
+    margin: 0 auto;
+    width: 50%;
+">
+        <div class="input-group">
+            <input id="input" type="text" class="form-control" placeholder="Scheme here...">
+            <span class="input-group-btn s_btn_wr">
+                <button class="btn btn-default" type="button" onclick="open_win()" >Go!</button>
+            </span>
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+<br>
+<br>
+<div id="parent">
+    <div id="item">
+        <img src="http://www.gdzysh.com/UploadFiles/20163918453336.gif" class="img-responsive" alt="Responsive image">
+    </div>
+</div>
+<!--http://www.gdzysh.com/UploadFiles/20163918453336.gif -->
+</body>
+
+
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</html>
