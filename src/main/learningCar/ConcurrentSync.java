@@ -24,47 +24,48 @@ public class ConcurrentSync {
     //private static HttpClient httpClient = new HttpClient();
 
 
-    public List<String> syncRequest(List<String> params){
+    public List<String> syncRequest(List<String> params, int times) {
 
         List<Callable<String>> callables = generalThreadInfo(params);
 
         List<String> reslutList = Lists.newArrayList();
 
+        while (times-- > 0) {
+            try {
+                List<Future<String>> futures = EXECUTOR_SERVICE.invokeAll(callables);
+                for (Future<String> future : futures) {
+                    String s = future.get();
+                    reslutList.add(s);
+                }
+            } catch (InterruptedException e) {
+                LOGGER.error("request failed!", e);
 
-        try {
-            List<Future<String>> futures = EXECUTOR_SERVICE.invokeAll(callables);
-            for (Future<String> future : futures) {
-                String s = future.get();
-                reslutList.add(s);
+            } catch (ExecutionException e) {
+                LOGGER.error("get result error!", e);
             }
 
-        } catch (InterruptedException e) {
-            LOGGER.error("request failed!",e);
-
-        } catch (ExecutionException e) {
-            LOGGER.error("get result error!",e);
         }
 
         return reslutList;
-
     }
 
 
-    private  List<Callable<String>> generalThreadInfo(List<String> params){
+    private List<Callable<String>> generalThreadInfo(List<String> params) {
 
 
         ArrayList<Callable<String>> runThreads = Lists.newArrayList();
-        for(String s: params){
+        for (String s : params) {
             runThreads.add(new ActiveSyncThread(s));
         }
         return runThreads;
     }
 
 
-      class  ActiveSyncThread implements Callable<String>{
+    class ActiveSyncThread implements Callable<String> {
         private String param;
-        private HttpClient httpClient = new HttpClient(); //todo 放到这里存在死循环 创建完线程执行的时候无法执行 原因待查明
-        public ActiveSyncThread(String param ) {
+        private HttpClient httpClient = new HttpClient();
+
+        public ActiveSyncThread(String param) {
             this.param = param;
         }
 
@@ -72,10 +73,6 @@ public class ConcurrentSync {
             return httpClient.autoClick(param);
         }
     }
-
-
-
-
 
 
 }

@@ -27,9 +27,9 @@ public class GoingTask implements Runnable {
     private void buildParams(List<String> list) {
         String date = getDate();
         // param = "{\"tbTimeNo\":\"sjd201702210011\",\"trainDate\":\"2017-07-26\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}";
-        list.add("{\"tbTimeNo\":\"sjd2016071600103\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
+        //list.add("{\"tbTimeNo\":\"sjd2016071600103\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
         list.add("{\"tbTimeNo\":\"sjd2016071600113\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
-        //list.add("{\"tbTimeNo\":\"sjd2016071600143 \",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}")
+        list.add("{\"tbTimeNo\":\"sjd2016071600143 \",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
         list.add("{\"tbTimeNo\":\"sjd201702210011\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
     }
 
@@ -49,11 +49,8 @@ public class GoingTask implements Runnable {
         ConcurrentSync concurrentSync = new ConcurrentSync();
         List<String> list = Lists.newArrayList();
         buildParams(list);
-        int i = 10;
-        while (i-- > 0) {
-            logger.info("runing " + i + " times");
-            List<String> strings = concurrentSync.syncRequest(list);
-        }
-        logger.info("task end!!!");
+        logger.info( " job  runing ");
+        concurrentSync.syncRequest(list,10);
+        logger.info("job end!!!");
     }
 }
