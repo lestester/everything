@@ -151,7 +151,7 @@ public class HttpClient {
         //uniqueMap.put("Referer", "http://xueyuan.byjx-0530.com/NMobile/page/time.html?version=20160927");
         //uniqueMap.put("Cookie", cookie);
         String timpStamp = String.valueOf(System.currentTimeMillis());
-        String param = "{\"coachID\":\"ygd201607160015\",\"date\":\"2017-7-28\",\"subid\":0}";
+        String param = "{\"coachID\":\"ygd201607160015\",\"date\":\"2017-7-29\",\"subid\":0}";
 
         CloseableHttpResponse closeableHttpResponse = postRequest(coachUrl + timpStamp, null, param);
 
