@@ -22,6 +22,8 @@ public class Test {
         int m=9;
         System.out.println(m--);
         System.out.println(m);
+
+        Integer.parseInt("A");
         /*while (true) {
             System.out.print("请输入数字N(0~10): ");
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
