@@ -20,10 +20,10 @@ public class GoingTask implements Runnable {
      * sjd2016071600103 08:40~09:20
      * sjd2016071600113 09:20~10:00
      * sjd2016071600143 10:00~10:40
-     *
+     * sjd2016083100023 10:40~11:20
      * sjd201702210009  15:00~15:40
      * sjd201702210011  16:20~17:00
-     *
+     * sjd201702210008  11:20~12:00
      *
      * @param list
      */
@@ -33,8 +33,8 @@ public class GoingTask implements Runnable {
         //list.add("{\"tbTimeNo\":\"sjd2016071600103\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
         //list.add("{\"tbTimeNo\":\"sjd2016071600113\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
         //list.add("{\"tbTimeNo\":\"sjd2016071600143 \",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
-        list.add("{\"tbTimeNo\":\"sjd201702210011\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
-        list.add("{\"tbTimeNo\":\"sjd201702210009\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
+        list.add("{\"tbTimeNo\":\"sjd2016083100023\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
+        list.add("{\"tbTimeNo\":\"sjd201702210008\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
 
     }
 
