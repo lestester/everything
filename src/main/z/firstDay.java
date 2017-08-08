@@ -17,8 +17,6 @@ public class firstDay {
 
         System.out.println(Integer.toOctalString(14));
 
-
-
     }
 
 

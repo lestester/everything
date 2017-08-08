@@ -19,13 +19,13 @@ public class ScheduledExecutorServiceTaks {
 
     private static Logger logger = LoggerFactory.getLogger(ScheduledExecutorServiceTaks.class);
 
-    public static void execteEightAtNightPerDay(){
+    public static void execteEightAtNightPerDay() {
         ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
         long oneDay = 24 * 60 * 60 * 1000;
-        long initDay = getTimeMillis("22:02:01") -System.currentTimeMillis();
-        initDay = initDay > 0? initDay: oneDay + initDay;
-        logger.info("task start!!");
-        scheduledExecutorService.scheduleWithFixedDelay(new GoingTask(),initDay,oneDay, TimeUnit.MILLISECONDS);
+        long initDay = getTimeMillis("08:00:01") - System.currentTimeMillis();
+        initDay = initDay > 0 ? initDay : oneDay + initDay;
+        logger.info("task start!! init: " + initDay / 1000 / 60);
+        scheduledExecutorService.scheduleWithFixedDelay(new GoingTask(), initDay, oneDay, TimeUnit.MILLISECONDS);
     }
 
     private static long getTimeMillis(String time) {
