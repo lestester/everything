@@ -1,9 +1,12 @@
+import bean.People;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URLDecoder;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by teng.liu on 2017/1/22.
@@ -23,7 +26,18 @@ public class Test {
         System.out.println(m--);
         System.out.println(m);
 
-        Integer.parseInt("A");
+        //Integer.parseInt("A");
+
+
+        HashMap<People, Integer> map = new HashMap<People, Integer>();
+        map.put(new People("java", 5),1);
+        map.put (new People("golang", 5),2);
+        map.put( new People("python", 15),3);
+        map.put(null,null);
+        map.put(new People("haha", 15),null);
+        //map.put("ruby", 4);
+        //map.put("scala", 5);
+        System.out.println(map);
         /*while (true) {
             System.out.print("请输入数字N(0~10): ");
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -59,7 +73,6 @@ public class Test {
         //String strlong = " this  is  a  long token eyJhbGciOiJSUzI1N iIsInR5cCI6Ikp XVCJ9.eyJBdXRo VmFsd WUi Ojcs IklkI joxN zIs IlV  zZXJu YW1lIj oidGVzdGV yQG5lc3RpYS 5jb20iLCJ leHAiOj E0ODcyM zc3Mjd9.ci 0sCcthE DmB TT9Ok5pzfDqN1 PpywzIOZ iyean wui0tV ohqdeQ gH9kb 0S8gcJDa9 Pt3qGh 03w9d -un981z fuVKsrW170 w8EBCc J2-6 FB_e3R ZmWF2 oU-PB8_G- vFnL3N BbcOvF0ef ldqBMSQl ysY_we pTnRxnYRn 2B qo_TsCDvE-q X04oXDg OTVQ 1npqgWe YwmZ VCFG v7_gj7 BkigOY lDa3kuem QQpwpY76z7 cuyRfh0 0jIPE- UDW6-cW aHALH CF8gF5eO tHmCgX feBj7POutql3  6agHjoWh sqz-x LTtKrH YPhfeG z7MK -Y4vTrRbe 1tctz9Q S44Pz HMdCT lfDSWd";
 
         //System.out.println(strlong.length());
-        char[] chars = {'1'};
          //String string = RandomStringUtils.random(1500);
         //System.out.println("1." +string);
 

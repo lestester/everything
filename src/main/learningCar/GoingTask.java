@@ -33,8 +33,31 @@ public class GoingTask implements Runnable {
         //list.add("{\"tbTimeNo\":\"sjd2016071600103\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
         //list.add("{\"tbTimeNo\":\"sjd2016071600113\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
         //list.add("{\"tbTimeNo\":\"sjd2016071600143 \",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
-        list.add("{\"tbTimeNo\":\"sjd2016083100023\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
-        list.add("{\"tbTimeNo\":\"sjd201702210008\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
+        //list.add("{\"tbTimeNo\":\"sjd2016083100023\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
+        //list.add("{\"tbTimeNo\":\"sjd201702210008\",\"trainDate\":\"" + date + "\",\"coachNo\":\"ygd201607160015\",\"subID\":\"3\"}");
+
+        //公共车
+        list.add("{\"tbTimeNo\":\"sjd2016071600103\",\"trainDate\":\"2017-08-21\",\"coachNo\":\"ygd201706300005\",\"subID\":\"3\"}");
+
+        //9：20
+        list.add("{\"tbTimeNo\":\"sjd2016071600113\",\"trainDate\":\"2017-08-21\",\"coachNo\":\"ygd201706300005\",\"subID\":\"3\"}");
+
+        //10：40
+        list.add("{\"tbTimeNo\":\"sjd2016083100023\",\"trainDate\":\"2017-08-21\",\"coachNo\":\"ygd201706300005\",\"subID\":\"3\"}");
+
+        //11:20
+        list.add("{\"tbTimeNo\":\"sjd201702210008\",\"trainDate\":\"2017-08-21\",\"coachNo\":\"ygd201706300005\",\"subID\":\"3\"}");
+
+        //16：20
+        list.add("{\"tbTimeNo\":\"sjd201702210011\",\"trainDate\":\"2017-08-21\",\"coachNo\":\"ygd201706300005\",\"subID\":\"3\"}");
+
+        //17:00
+        list.add("{\"tbTimeNo\":\"sjd201702210012\",\"trainDate\":\"2017-08-21\",\"coachNo\":\"ygd201706300005\",\"subID\":\"3\"}");
+
+        //15:40
+        list.add("{\"tbTimeNo\":\"sjd201702210010\",\"trainDate\":\"2017-08-21\",\"coachNo\":\"ygd201706300005\",\"subID\":\"3\"}");
+
+
 
     }
 
